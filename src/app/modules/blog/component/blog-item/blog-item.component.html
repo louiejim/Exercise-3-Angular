@@ -1,0 +1,12 @@
+<div>
+  <br />Id: {{ blog?.id }}<br />
+  {{ blog?.title }}
+  {{ blog?.author }}<br />
+  {{ blog?.comments }}<br />
+  {{ blog?.description }}<br /><br />
+</div>
+
+<button style="margin-right: 5px" (click)="editEmitter.emit(blog?.id)">
+  Edit
+</button>
+<button (click)="deleteEmitter.emit(blog?.id)">Delete</button>
